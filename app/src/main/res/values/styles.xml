@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="ItemInfoLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTextInfoName</item>
+        <item name="android:textSize">@dimen/brewery_item_info_text_size</item>
+    </style>
+
+    <style name="BreweryInfo">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+</resources>

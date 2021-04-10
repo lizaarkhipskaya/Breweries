@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/item_brewery_margin_vertical"
+    android:layout_marginHorizontal="@dimen/item_brewery_margin_horizontal"
+    android:background="@drawable/bg_item"
+    android:orientation="vertical"
+    android:padding="@dimen/item_brewery_padding">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorTextTitle"
+        android:textSize="@dimen/item_brewery_name_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/country"
+        style="@style/BreweryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ItemInfoLabel" />
+
+    <TextView
+        android:id="@+id/state"
+        style="@style/BreweryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ItemInfoLabel" />
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/BreweryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ItemInfoLabel" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/BreweryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ItemInfoLabel" />
+
+    <TextView
+        android:id="@+id/website"
+        style="@style/BreweryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:textAppearance="@style/ItemInfoLabel"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/map_button"
+        style="@style/BreweryInfo"
+        android:layout_width="@dimen/item_brewery_map_button_width"
+        android:layout_height="@dimen/item_brewery_map_button_height"
+        android:background="@drawable/bg_item_map_button"
+        android:text="@string/brewery_item_button_map"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/item_brewery_map_button_text_size"
+        android:visibility="gone" />
+</LinearLayout>

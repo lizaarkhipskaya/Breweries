@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bg_item_corner_radius">10.0dp</dimen>
+    <dimen name="bg_search_corner_radius">10.0dp</dimen>
+    <dimen name="bg_item_stroke_width">2dp</dimen>
+    <dimen name="bg_item_map_button_corner_radius">10dp</dimen>
+
+    <dimen name="action_bar_title_text_size">26sp</dimen>
+    <dimen name="search_container_height">45dp</dimen>
+    <dimen name="search_container_padding">7dp</dimen>
+    <dimen name="recycler_view_margin">10dp</dimen>
+    <dimen name="drinking_map_image_translation_z">10dp</dimen>
+
+    <dimen name="item_brewery_margin_vertical">10dp</dimen>
+    <dimen name="item_brewery_margin_horizontal">20dp</dimen>
+    <dimen name="item_brewery_padding">15dp</dimen>
+    <dimen name="item_brewery_name_text_size">30sp</dimen>
+    <dimen name="item_brewery_map_button_width">120dp</dimen>
+    <dimen name="item_brewery_map_button_height">30dp</dimen>
+    <dimen name="item_brewery_map_button_text_size">15sp</dimen>
+    <dimen name="brewery_item_info_text_size">15dp</dimen>
+</resources>
