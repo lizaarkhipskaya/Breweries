@@ -12,14 +12,16 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.project.breweriestlist.adapter.BreweriesAdapter
 import com.project.breweriestlist.data.Brewery
 import com.project.breweriestlist.viewmodel.BreweriesViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
-import org.koin.android.viewmodel.ext.android.viewModel
+import javax.inject.Inject
 
 private const val LOG_TAG = "MainActivity"
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private val viewModel by viewModel<BreweriesViewModel>()
+    @Inject lateinit var viewModel: BreweriesViewModel
     private lateinit var adapter: BreweriesAdapter
     private lateinit var handler: Handler
 

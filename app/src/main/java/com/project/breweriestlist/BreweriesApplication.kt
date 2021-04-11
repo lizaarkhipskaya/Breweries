@@ -8,24 +8,21 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 import com.project.breweriestlist.work.RefreshBreweryDataWorker
+import dagger.hilt.android.HiltAndroidApp
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
 private const val LOG_TAG = "BreweriesApplication"
+
+@HiltAndroidApp
 class BreweriesApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
         Log.i(LOG_TAG, "onCreate()")
         setUpWorkManger()
-
-        startKoin {
-            androidLogger(Level.DEBUG)
-            androidContext(this@BreweriesApplication)
-            modules(appModule)
-        }
     }
 
     private fun setUpWorkManger() {

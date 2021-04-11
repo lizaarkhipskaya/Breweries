@@ -9,10 +9,11 @@ import androidx.lifecycle.asLiveData
 import com.project.breweriestlist.api.BreweryApiService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
 const val LOG_TAG = "BreweriesRepository"
 
-class BreweriesRepository(
+class BreweriesRepository @Inject constructor(
     val databaseDao: BreweryDao,
     val breweryApiService: BreweryApiService
 ) {

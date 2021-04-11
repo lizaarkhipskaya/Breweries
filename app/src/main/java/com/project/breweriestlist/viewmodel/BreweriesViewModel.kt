@@ -9,10 +9,11 @@ import com.project.breweriestlist.data.BreweriesRepository
 import com.project.breweriestlist.data.LOG_TAG
 import kotlinx.coroutines.launch
 import java.io.IOException
+import javax.inject.Inject
 
 private const val TAG = "BreweriesViewModel"
 
-class BreweriesViewModel(
+class BreweriesViewModel @Inject constructor(
     application: Application,
     private val repository: BreweriesRepository
 ) : AndroidViewModel(application) {
