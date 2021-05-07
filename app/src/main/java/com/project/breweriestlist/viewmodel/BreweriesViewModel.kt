@@ -7,12 +7,14 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.project.breweriestlist.data.BreweriesRepository
 import com.project.breweriestlist.data.LOG_TAG
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import java.io.IOException
 import javax.inject.Inject
 
 private const val TAG = "BreweriesViewModel"
 
+@HiltViewModel
 class BreweriesViewModel @Inject constructor(
     application: Application,
     private val repository: BreweriesRepository

@@ -5,6 +5,7 @@ import android.os.Handler
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -21,7 +22,7 @@ private const val LOG_TAG = "MainActivity"
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    @Inject lateinit var viewModel: BreweriesViewModel
+    val viewModel by viewModels<BreweriesViewModel>()
     private lateinit var adapter: BreweriesAdapter
     private lateinit var handler: Handler
 
